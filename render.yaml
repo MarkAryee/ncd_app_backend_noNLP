@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: ncd400-api
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn 3_api_and_model_api:app --host 0.0.0.0 --port 8080"
+    branch: main
+    plan: free
